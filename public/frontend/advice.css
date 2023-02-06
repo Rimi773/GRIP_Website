@@ -1,0 +1,175 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .QMM {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    height: 350px;
+    margin-bottom: 50px;
+  }
+  .QMM img{
+    width: 100%;
+  }
+  .QMM text{
+    text-align: center;
+    font-size: 20sp;
+  }
+  .qmm_con::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .margin{
+    margin-top: 40px;
+  }
+
+  h2{
+    color: #2b6666;
+  }
+  .QMM_bt button {
+          color: rgb(255, 255, 255);
+          padding: 6px;
+          margin-top: 8px;
+          margin-right: 16px;
+          background: rgb(111, 81, 247);
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+          transition: 1s;
+  }
+  .QMM_bt button:hover {
+          background-color: rgb(94, 208, 223);
+          color: black;
+  }
+  .quotes {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80vw;
+    min-height: 400px;
+    align-items: center;
+    display: flex;
+    margin-left: 150px;
+    justify-content: space-between;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  .quotes .box {
+    position: relative;
+    width: 25vw;
+    height: 50vh;
+    min-height: 320px;
+    background: #f2f2f2;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    color: #4b384c;
+  }
+  .a :link{
+    color: black;
+    text-decoration: none;
+  }
+
+  .quotes .box::before {
+    content: '\201C';
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    pointer-events: none;
+  }
+  .quotes .box::after {
+    content: '\201D';
+    position: absolute;
+    bottom: -10%;
+    right: 5%;
+    font-size: 120px;
+    opacity: 0.2;
+    background: transparent;
+    filter: invert(1);
+    pointer-events: none;
+  }
+  .quotes .box p {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  .quotes .box h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 10%;
+    right: 10%;
+    font-size: 1.5rem;
+  }
+  .quotes .box:hover {
+    color: #f2f2f2;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+  }
+  .quotes .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .quotes .box.box1:hover,
+  .quotes .box.box1:hover~.bg {
+    background: linear-gradient(135deg, #9f85b8 15%,#2b94e5 100%);
+  }
+  .quotes .box.box2:hover,
+  .quotes .box.box2:hover~.bg {
+    background: linear-gradient(135deg, #56a5e2 15%,#2b6666 100%);
+  }
+
+  .quotes .box.box3:hover,
+  .quotes .box.box3:hover~.bg {
+    background: linear-gradient(135deg, #4b384c 15%,#c569e9 100%);
+
+  }
+
+  @media (max-width:767px){
+    .quotes{
+        width:100%;
+        padding:20px;
+    }
+    .quotes .box {
+        width:100%;
+        margin-bottom: 20px;
+    }
+  }
+  .txt{
+    margin-top: 45px;
+    font-size: 30px;
+    margin-left: 1px;
+    padding: 8px 12px;
+    text-align: center;
+	border: 8px solid rgb(0, 128, 96);
+	color: black;
+  }
+  .im{
+    color: rgb(34, 103, 160);
+  }
+
